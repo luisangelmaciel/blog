@@ -1,0 +1,180 @@
+/* Global */
+body, input {
+  color: #333;
+  font-family: Open Sans, sans-serif;
+  margin: 0;
+}
+
+article {
+  border: 0;
+  margin: auto;
+  overflow: hidden;
+  position: relative;
+  min-height: 600px;
+  width: 600px;
+}
+
+#content {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 2416px;
+}
+
+section {
+  display: inline-table;
+  margin: 0;
+  width: 600px;
+}
+
+p {
+  line-height: 1.75em;
+}
+
+input {
+  font-weight: 300;
+  -webkit-appearance: none;
+}
+
+input:focus {
+  outline: 0;
+}
+
+/* Navigation */
+nav ul {
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline-block;
+  font-size: 14pt;
+  font-weight: 300;
+  line-height: 60px;
+}
+
+nav ul li a {
+  color: #222;
+  display: block;
+  padding: 0 20px;
+  text-decoration: none;
+}
+
+nav ul li:hover ul li:hover {
+  background: #ccc;
+}
+
+.current {
+  background: #222;
+}
+
+.current a {
+  color: #fff;
+}
+
+#search {
+  float: right;
+}
+
+#search-box {
+  border: 0;
+  border-bottom: 1px solid #222;
+  color: #222;
+  font-size: 16pt;
+  height: 62px;
+  padding: 0 10px;
+}
+
+#search-btn {
+  background: #222;
+  border: 0;
+  color: #fff;
+  font-size: 14pt;
+  width: 93px;
+  height: 60px;
+}
+
+#search-btn:active {
+  background: #aaa;
+}
+
+/* Mobile */
+@media screen and (max-width: 768px) {
+  nav {
+    display: table;
+    table-layout: fixed;
+    margin: auto;
+    text-align: center;
+    width: 90%;
+  }
+
+  nav ul {
+    display: table-row;
+  }
+
+  nav ul li {
+    border-top: 1px solid #222;
+    border-bottom: 1px solid #222;
+    border-left: 1px solid #222;
+    display: table-cell;
+    font-size: 10pt;
+    margin: 0;
+    padding: 0;
+    line-height: 30px;
+    text-align: center;
+  }
+
+  nav ul li a {
+    color: #222;
+    padding: 0;
+    width: 100%;
+  }
+
+  nav ul li:first-of-type {
+    border-radius: 10px 0 0 10px;
+  }
+
+  nav ul li:last-of-type {
+    border-radius: 0 10px 10px 0;
+    border-right: 1px solid #222;
+  }
+
+  .caret {
+    display: none;
+  }
+
+  article {
+    width: 300px;
+  }
+
+  #content {
+    width: 1208px;
+  }
+
+  section {
+    width: 298px;
+  }
+
+  #search {
+    border: 0;
+    float: none;
+    margin-bottom: 20px;
+    width: 100%;
+  }
+
+  #search-box {
+    border: 0;
+    border-bottom: 1px solid #222;
+    font-size: 12pt;
+    width: 78.5%;
+    height: 45px;
+    padding: 0 10px 0 25px;
+  }
+
+  #search-btn {
+    font-size: 12pt;
+    font-weight: 300;
+    width: 20%;
+    height: 45px;
+  }
+}
