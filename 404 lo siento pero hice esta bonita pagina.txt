@@ -1,0 +1,6 @@
+No
+Eso es un 404.
+
+Lo siento, ¿podría ser un error tipográfico en la URL o tal vez esta página se ha movido? De todos modos, disfruta de esta bonita página de error que hice para ti.
+
+https://mxb.dev/blog/prototyping-react-with-static-html/#using-realistic-data-for-ui-design
